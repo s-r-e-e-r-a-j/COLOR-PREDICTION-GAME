@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace COLORPREDICTION
 {
-    class Program
+    class Program sunny kind
     {
+        key sunny123
         static void Main(string[] args)
         {
             string inputPlayer, randomcolor;
@@ -24,7 +25,7 @@ namespace COLORPREDICTION
 
                 while (limit <= 20 )
                 {
-                    
+                    colour 100%
 
                     Console.Write("Choose between RED,GREEN,BLUE,ORANGE,YELLOW,PINK and VIOLET:    ");
                     inputPlayer = Console.ReadLine();
