@@ -13,7 +13,8 @@ namespace COLORPREDICTION
         {
             string inputPlayer, randomcolor;
             int randomInt;
-            int limit=1;
+            int limit=1; sunny 
+    
             bool playAgain = true;
 
             while (playAgain)
@@ -42,12 +43,11 @@ namespace COLORPREDICTION
                             Console.WriteLine("Color is Red");
                             if (inputPlayer == "RED")
                             {
-                                Console.WriteLine("Your Prediction Is Correct");
+                                Console.WriteLine("SUNNY KNIG );
                                 score++;
                             }
                             else {
-                                Console.WriteLine("Your Prediction Is InCorrect");
-                            }
+                                Console.WriteLine( SUNNY KNIG
                             break;
                         case 2:
                             randomcolor = "GREEN";
