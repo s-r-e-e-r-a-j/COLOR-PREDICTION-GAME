@@ -1,5 +1,5 @@
 ﻿
-using System;
+using System; sunnykind
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace COLORPREDICTION
 {
-    class Program
+    class Program sunnyking
     {
         static void Main(string[] args)
         {
