@@ -1,43 +1,33 @@
-﻿
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace COLORPREDICTION
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string inputPlayer, randomcolor;
             int randomInt;
-            int limit=1;
+            int limit = 1;
             bool playAgain = true;
 
             while (playAgain)
             {
-
                 int score = 0;
-                
 
-                while (limit <= 20 )
+                while (limit <= 20)
                 {
-                    
-
-                    Console.Write("Choose between RED,GREEN,BLUE,ORANGE,YELLOW,PINK and VIOLET:    ");
+                    Console.Write("Choose between RED, GREEN, BLUE, ORANGE, YELLOW, PINK and VIOLET: ");
                     inputPlayer = Console.ReadLine();
                     inputPlayer = inputPlayer.ToUpper();
 
                     Random rnd = new Random();
-
                     randomInt = rnd.Next(1, 8);
 
                     switch (randomInt)
                     {
                         case 1:
-                            randomcolor= "RED";
+                            randomcolor = "RED";
                             limit++;
                             Console.WriteLine("Color is Red");
                             if (inputPlayer == "RED")
@@ -45,10 +35,12 @@ namespace COLORPREDICTION
                                 Console.WriteLine("Your Prediction Is Correct");
                                 score++;
                             }
-                            else {
-                                Console.WriteLine("Your Prediction Is InCorrect");
+                            else
+                            {
+                                Console.WriteLine("Your Prediction Is Incorrect");
                             }
                             break;
+
                         case 2:
                             randomcolor = "GREEN";
                             limit++;
@@ -58,12 +50,12 @@ namespace COLORPREDICTION
                                 Console.WriteLine("Your Prediction Is Correct");
                                 score++;
                             }
-                            else {
-                             
-                              Console.WriteLine("Your Prediction Is Incorrect");
-
+                            else
+                            {
+                                Console.WriteLine("Your Prediction Is Incorrect");
                             }
                             break;
+
                         case 3:
                             randomcolor = "BLUE";
                             limit++;
@@ -73,107 +65,87 @@ namespace COLORPREDICTION
                                 Console.WriteLine("Your Prediction Is Correct");
                                 score++;
                             }
-                            else {
-                                Console.WriteLine("Your Prediction Is InCorrect");
+                            else
+                            {
+                                Console.WriteLine("Your Prediction Is Incorrect");
                             }
                             break;
 
-                            case 4:
-                             randomcolor="ORANGE";
-                             limit++;
-                             Console.WriteLine("Color Is Orange");
-                              
-                              if(inputPlayer == "ORANGE"){
-
-                               Console.WriteLine("Your Prediction Is Correct");
-                               score++;
-
-                              }
-                              else{
-                                   
-                             Console.WriteLine("Your Prediction Is Incorrect");
-
-                              }
-
-                            break;
-
-                            case 5 :
-                           
-                            randomcolor="YELLOW";
+                        case 4:
+                            randomcolor = "ORANGE";
                             limit++;
-                            Console.WriteLine("Color Is Yellow");
-                            if(inputPlayer == "YELLOW"){
-                                  
+                            Console.WriteLine("Color Is Orange");
+                            if (inputPlayer == "ORANGE")
+                            {
                                 Console.WriteLine("Your Prediction Is Correct");
                                 score++;
-
                             }
-                            else{
-
-                           Console.WriteLine("Your Prediction Is InCorrect");
-
+                            else
+                            {
+                                Console.WriteLine("Your Prediction Is Incorrect");
                             }
-
                             break;
 
-                            case 6:
-                            
-                            randomcolor="PINK";
+                        case 5:
+                            randomcolor = "YELLOW";
                             limit++;
-                            Console.WriteLine("Color Is PINK");
-
-                            if(inputPlayer == "PINK"){
-                            
-                             Console.WriteLine("Your Prediction Is Correct");
-                             score++;
-
+                            Console.WriteLine("Color Is Yellow");
+                            if (inputPlayer == "YELLOW")
+                            {
+                                Console.WriteLine("Your Prediction Is Correct");
+                                score++;
                             }
-
-                            else{
-
-                                Console.WriteLine("Your Prediction Is InCorrect");
+                            else
+                            {
+                                Console.WriteLine("Your Prediction Is Incorrect");
                             }
-
                             break;
-                           
-                            case 7:
 
-                             randomcolor="VIOLET";
-                             limit++;
-                             Console.WriteLine("Color Is Violet");
+                        case 6:
+                            randomcolor = "PINK";
+                            limit++;
+                            Console.WriteLine("Color Is Pink");
+                            if (inputPlayer == "PINK")
+                            {
+                                Console.WriteLine("Your Prediction Is Correct");
+                                score++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Your Prediction Is Incorrect");
+                            }
+                            break;
 
-                             if(inputPlayer == "VIOLET"){
-
-                             Console.WriteLine("Your Prediction Is Correct");
-                              score++;
-
-                             }
-
-                             else{
-                              
-                              Console.WriteLine("Your Prediction Is InCorrect");
-
-                             }
-
-                           break;
+                        case 7:
+                            randomcolor = "VIOLET";
+                            limit++;
+                            Console.WriteLine("Color Is Violet");
+                            if (inputPlayer == "VIOLET")
+                            {
+                                Console.WriteLine("Your Prediction Is Correct");
+                                score++;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Your Prediction Is Incorrect");
+                            }
+                            break;
 
                         default:
                             Console.WriteLine("Invalid entry!");
                             break;
                     }
 
-                    Console.WriteLine("\n\nSCORES:\tPLAYERSCORE:\t{0}",score);
-
+                    Console.WriteLine("\n\nSCORES:\tPLAYERSCORE:\t{0}", score);
                 }
 
-                Console.WriteLine("Your Score Is {0} Out Of 20",score);
-            
+                Console.WriteLine("Your Score Is {0} Out Of 20", score);
 
-                Console.WriteLine("Do you want to play again?(y/n)");
+                Console.WriteLine("Do you want to play again? (y/n)");
                 string loop = Console.ReadLine();
                 if (loop == "y")
-                {    
-                    limit=1;
+                {
+                    limit = 1;
                     playAgain = true;
                     Console.Clear();
                 }
@@ -181,11 +153,6 @@ namespace COLORPREDICTION
                 {
                     playAgain = false;
                 }
-                else
-                { 
-                
-                }
-
             }
         }
     }
